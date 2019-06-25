@@ -1,7 +1,7 @@
 from flask import (Flask, request, render_template, redirect, session)
 from flask_debugtoolbar import DebugToolbarExtension
 from jinja2 import StrictUndefined
-from model import connect_to_db, db, 
+# from model import connect_to_db, db, 
 
 app = Flask(__name__)
 app.secret_key = "yes"
