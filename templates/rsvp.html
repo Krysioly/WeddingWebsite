@@ -1,6 +1,11 @@
 {% extends 'base.html' %}
 {% block body %}
     <div>
-        
+        RSVP
+        <form action='/rsvped' method="POST">
+        <input type="text" name="name" value="Name">
+        <input type="" name="going">
+        <input type="submit" value="send it!">
+    </form>
     </div>
 {% endblock %}

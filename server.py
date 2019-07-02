@@ -9,29 +9,31 @@ app.jinja_env.undefined = StrictUndefined
 
 
 @app.route('/')
-def index():
+def show_homepage():
     # show homepage
     print("\n\nshow homepage\n\n")
     
     return render_template("homepage.html")
      
 @app.route('/location')
-def show_woods():
-    """Show woods"""
+def show_location():
+    """Show location info"""
     return render_template("location.html")
      
 @app.route('/rsvp')
-def show_tables():
-    """Show tables"""
+def show_rsvp_form():
+    """Show form for RSVP"""
     return render_template("rsvp.html")
      
 @app.route('/barinfo')
-def show_smalls():
-    """Show smalls"""
+def show_barinfo():
+    """Show bar into"""
     return render_template("barinfo.html")
      
-
-
+@app.route('/details')
+def show_details():
+    """Show details"""
+    return render_template("details.html")
 
 
 if __name__ == "__main__":
